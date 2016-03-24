@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompliaShield.Owin.Security.OAuth2Service", "src\CompliaShield.Owin.Security.OAuth2Service\CompliaShield.Owin.Security.OAuth2Service.csproj", "{5791A106-93E2-4508-BDD4-3550BB947BE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{40F1F83B-98FF-4ECC-B89C-AB5FB428492D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sandbox", "Sandbox", "{81D0431D-0D55-449A-9B76-E0A23C5F3964}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompliaShield.Katana.Sandbox.WebClient", "tests\CompliaShield.Katana.Sandbox.WebClient\CompliaShield.Katana.Sandbox.WebClient.csproj", "{789A8BDD-494A-4602-BF42-4DC1026AF085}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5791A106-93E2-4508-BDD4-3550BB947BE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5791A106-93E2-4508-BDD4-3550BB947BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5791A106-93E2-4508-BDD4-3550BB947BE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5791A106-93E2-4508-BDD4-3550BB947BE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{789A8BDD-494A-4602-BF42-4DC1026AF085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{789A8BDD-494A-4602-BF42-4DC1026AF085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{789A8BDD-494A-4602-BF42-4DC1026AF085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{789A8BDD-494A-4602-BF42-4DC1026AF085}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5791A106-93E2-4508-BDD4-3550BB947BE4} = {40F1F83B-98FF-4ECC-B89C-AB5FB428492D}
+		{789A8BDD-494A-4602-BF42-4DC1026AF085} = {81D0431D-0D55-449A-9B76-E0A23C5F3964}
+	EndGlobalSection
+EndGlobal

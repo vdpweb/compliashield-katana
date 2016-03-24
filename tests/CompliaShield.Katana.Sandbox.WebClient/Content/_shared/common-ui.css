@@ -1,0 +1,489 @@
+﻿
+
+section h1 {
+    padding-top: .35em;
+    font-size: 1.6em;
+}
+
+.validation-summary-errors {
+    color: #ff0000;
+}
+
+/*
+    Content breaks
+*************************************************/
+
+.spacer {
+    height: 5px;
+}
+
+.padded-horizontal {
+    padding: 15px 0;
+}
+
+.content-break-light {
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 1px solid #E8EEF4;
+    border-bottom: 1px solid #E8EEF4;
+}
+
+    .content-break-light:last-of-type {
+        border-bottom: none;
+    }
+
+.content-break {
+    margin: 20px 0;
+    padding: 20px;
+    border-top: 5px solid #E8EEF4;
+    border-bottom: 5px solid #E8EEF4;
+}
+
+    .content-break:last-of-type {
+        border-bottom: none;
+    }
+
+
+.content-aside {
+    margin: 20px 0;
+    padding: 20px;
+    /*border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;*/
+    border-left: 10px solid #E8EEF4;
+}
+
+
+
+/*
+    Buttons
+*************************************************/
+
+/* BUTTONS */
+
+.button-set {
+    margin: 15px 0;
+    padding: 5px 0;
+}
+
+.button-edit {
+    background: url("Images/Icons/icn_Edit16_Gray.png") no-repeat scroll 10px 10px transparent;
+    padding-left: 38px;
+}
+
+
+.button-update, .button-insert {
+    background: url("Images/Icons/icn_GreenCheck_Circle.png") no-repeat scroll 7px 5px transparent;
+    padding-left: 42px;
+}
+
+.buttonCancel, a.buttonCancel, .button-cancel, a.button-cancel {
+    border-color: #DBDBDB;
+    color: #999999 !important;
+}
+
+.buttonDelete, .button-delete, form input.button-delete[type="submit"] {
+    background: url("Images/icons/icn_Delete_22_Light.png") no-repeat scroll 7px 5px transparent;
+    color: #FF0000;
+    padding-left: 40px;
+}
+
+.button-confirm {
+}
+
+.button-command {
+}
+
+.button-continue, .button-next {
+    background: url("Images/Icons/icn_Arrow_Right_22.png") no-repeat right 7px center transparent;
+    padding-right: 36px;
+}
+
+.button-continue {
+}
+
+.button-next {
+}
+
+.buttonBack, .button-back {
+    background: url("Images/Icons/icn_Arrow_Left_22.png") no-repeat scroll 7px 5px transparent;
+    padding-left: 36px;
+}
+
+.button-check, input.button-check[type="submit"] {
+    background: url("Images/Icons/icn_GreenCheck_Circle.png") no-repeat scroll 7px 5px transparent;
+    padding-left: 42px;
+}
+
+.button-stop, input.button-stop[type="submit"] {
+    background: url("Images/Icons/icn_Stop_22.png") no-repeat scroll 7px 5px transparent;
+    color: #FF0000;
+    padding-left: 36px;
+}
+
+.button-disabled, input.button-disabled[type="submit"] {
+    background: url("Images/Icons/icn_Stop_22.png") no-repeat scroll 7px 5px;
+    padding-left: 36px;
+    color: #999999 !important;
+}
+
+.button-add, input.button-add[type="submit"] {
+    background: url("Images/Icons/icn_Add_22_Light.png") no-repeat scroll 7px 5px transparent;
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+.button-up-one-level, input.button-up-one-level[type="submit"] {
+    background: url("Images/Icons/icn_UpOneLevel.png") no-repeat scroll 7px 5px transparent;
+    padding-left: 36px;
+    cursor: pointer;
+}
+
+.button-refresh, input.button-refresh[type="submit"] {
+    background: url("Images/Icons/icn_Refresh_Gray.png") no-repeat scroll 7px 5px transparent;
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+.button-security {
+    background: url("Images/Icons/icn_Lock_Locked_Light.png") no-repeat scroll 10px 10px transparent;
+    padding-left: 38px;
+}
+
+.button-unlock {
+    background: url("Images/Icons/icn_Lock_Unlocked_Light.png") no-repeat scroll 10px 10px transparent !important;
+    padding-left: 38px !important;
+}
+
+
+.button-upload {
+    background: url("Images/Icons/icn_Upload.png") no-repeat 7px center transparent;
+    padding-left: 36px;
+}
+
+.button-download {
+    background: url("Images/Icons/icn_Download.png") no-repeat 7px center transparent;
+    padding-left: 36px;
+}
+
+
+/***************************/
+
+h1.auth-grant-title {
+    background: url("../logos/cs-logo-square-gray-40-nt.png") no-repeat scroll 0 0 transparent;
+    padding-left: 58px;
+}
+
+.auth-scope-list {
+}
+
+    .auth-scope-list .list-group-item {
+        background: url("Images/Icons/icn-avatar-16.png") no-repeat scroll 10px 13px transparent;
+        padding-left: 38px;
+    }
+
+    .auth-scope-list .openid {
+        background: url("Images/Icons/icn_Lock_Locked_Light.png") no-repeat scroll 10px 13px transparent;
+        padding-left: 38px;
+    }
+
+
+
+
+/**************************/
+
+
+.no-data {
+    border: 1px solid #E8EEF4;
+    padding: 5px;
+    color: #696969;
+    background: #F5F5F5;
+}
+
+
+.padded-box {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #E8EEF4;
+}
+
+span.padded-box {
+    padding: 5px;
+}
+
+/**************************************/
+
+ul.warning, ul.error, ul.info, ul.check, ul.check-light, ul.attention, ul.add, ul.credits, ul.sortable, ul.file-selector, ul.credits-needed {
+    padding: 0;
+    margin: 20px 0 0 0;
+    color: #696969;
+}
+
+ul.results {
+    margin: -20px 0 20px 55px !important;
+    max-width: 60%;
+}
+
+
+
+ul.warning li p, ul.error li p, ul.info li p, ul.check li p, ul.check-light li p, ul.attention li p, ul.add li p, ul.credits li p, ul.sortable li p, ul.file-selector li p, ul.credits-needed {
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+ul.info ul, ul.check ul, ul.check-light ul {
+    margin-top: 20px;
+}
+
+ul.sortable li {
+    border: 1px solid #f0f0ee;
+    padding: 2px;
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+
+
+ul.contact-form-config td {
+    font-size: 11px;
+}
+
+ul.sortable li h5 {
+    font-size: 10px;
+    font-weight: normal;
+    text-align: center;
+    color: #333333;
+    border: 1px solid #f0f0ee;
+    background-color: #f0f0ee;
+    cursor: pointer;
+    margin: 1px;
+    padding: 2px;
+}
+
+ul.error li, ul.warning li, ul.info li, ul.check li, ul.check-light li, ul.attention li, ul.options li, ul.add li, ul.file-selector li,
+ul.credits li, ul.credits-needed li {
+    padding: 7px 0 5px 35px;
+    background-repeat: no-repeat;
+    min-height: 28px;
+    list-style-type: none;
+    margin: 0;
+}
+
+
+ul.info li, ul li.info {
+    background: url(images/icons/icn_Info_24_Light.png) 0px 7px no-repeat;
+}
+
+ul li ul.info li {
+    background: url(images/icons/icn_Info_24_Light.png) 0px 7px no-repeat;
+    border: none !important;
+    padding: 12px 0 5px 50px;
+    min-height: 28px;
+    list-style-type: none;
+    margin: 0;
+}
+
+
+ul li ul.check {
+    margin: 10px 0;
+}
+
+    ul li ul.check:last-child {
+        margin-bottom: 0;
+    }
+
+    ul li ul.check li {
+        background: url(images/icons/icn_GreenCheck_Circle.png) 0px 7px no-repeat;
+        padding: 7px 0 5px 35px;
+        border: none !important;
+        min-height: 28px;
+        list-style-type: none;
+        margin: 0;
+    }
+
+ul li ul.check-light {
+    margin: 10px 0;
+}
+
+    ul li ul.check-light:last-child {
+        margin-bottom: 0;
+    }
+
+ul.check-light li, ul li.check-light {
+    background: url(images/icons/icn_GrayCheck_Circle.png) 0px 7px no-repeat;
+}
+
+
+ul li ul.check-light li {
+    background: url(images/icons/icn_GrayCheck_Circle.png) 0px 7px no-repeat;
+    border: none !important;
+    padding: 12px 0 5px 50px;
+    min-height: 28px;
+    list-style-type: none;
+    margin: 0;
+}
+
+
+ul.check li, ul li.check {
+    background: url(images/icons/icn_GreenCheck_Circle.png) 0px 7px no-repeat;
+    padding: 7px 0 5px 35px;
+}
+
+ul.file-selector li {
+    background: url(images/icons/icn_File.png) 0px 7px no-repeat;
+}
+
+ul.add li, ul.credits li {
+    background: url(images/icons/icn_Add.png) 0px 7px no-repeat;
+}
+
+ul.credits-needed li {
+    display: block;
+    background: url(Images/sys_disabled.png) 0px 7px no-repeat;
+    padding: 15px 0 10px 55px;
+    min-height: 50px;
+    color: #ff0000;
+    text-align: left;
+    cursor: default;
+}
+
+ul.options {
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+    ul.options ul {
+        padding: 0;
+        margin: 15px 0;
+    }
+
+
+    ul.options li {
+        /* background-image: url(images/icons/icn_Blue_Attention_Circle_padded.png);*/ /*  background: url(images/icons/icn_Info_24_Glass.png) no-repeat 8px 8px; */
+        background: url(images/icons/icn_Arrow_Right_22.png) no-repeat 0px 18px;
+        padding: 20px 10px 20px 45px;
+        border-bottom: 1px solid #E8EEF4;
+        margin: 0;
+        color: #666666;
+    }
+
+        ul.options li:first-child {
+            border-top: 1px solid #E8EEF4;
+        }
+
+        ul.options li.selected-report-filters {
+            background: none;
+            padding: 5px;
+        }
+
+ul.subtle li {
+    border: none;
+}
+
+ul.smallNote {
+}
+
+    ul.smallNote li {
+        color: #999;
+        font-size: 0.8em;
+        list-style-type: none;
+    }
+
+ul.small-note-basic {
+    margin: 0 5px 5px 0;
+    padding: 0;
+}
+
+    ul.small-note-basic li {
+        color: #999;
+        font-size: 0.8em;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+ul.error li, ul li.error {
+    background: url(images/icons/icn_RedExclmtn_Circle.png) 0px 7px no-repeat;
+}
+
+ul.attention li, ul li.attention {
+    background: url(images/icons/icn_YellowExclmtn_Circle.png) 0px 7px no-repeat;
+}
+
+ul.warning li, ul li.warning {
+    background: url(images/icons/icn_Warning.png) 0px 7px no-repeat;
+}
+
+
+ul.right li {
+    text-align: right;
+}
+
+ul.options li.SelectCompany, ul.options li.area-pointer {
+    background: url(images/icons/icn_Arrow_Right_Circle.png) no-repeat 15px 15px; /*url(images/icons/icn_Arrow_Left48.png) no-repeat; */
+    padding-left: 66px;
+    padding-top: 13px;
+}
+
+div.area-pointer {
+    display: block;
+    background: url(images/icons/icn_Arrow_Right_Circle.png) no-repeat 5px 12px;
+    background-repeat: no-repeat;
+    padding: 12px 0 10px 50px;
+    min-height: 50px;
+    text-align: left;
+    font-size: 1.2em;
+    cursor: default;
+}
+
+    div.area-pointer h3 {
+        margin-top: 0;
+        font-size: 1.2em;
+    }
+
+ul.options li.CreateContent {
+    background: url(images/icons/icn_Edit48.png) no-repeat 0px 10px;
+    padding-left: 66px;
+    padding-top: 10px;
+}
+
+ul.options li.CreateCampaigns {
+    background: url(images/icons/sys_configuration.png) no-repeat 5px 5px;
+    padding-left: 66px;
+    padding-top: 10px;
+}
+
+ul.options li.ManageProspects {
+    background: url(images/icons/icn_Person_Add48.png) no-repeat 5px 5px;
+    padding-left: 66px;
+    padding-top: 10px;
+}
+
+ul.options li.Message {
+    background: url(images/icons/sys_dialog.png) no-repeat 5px 5px;
+    padding-left: 66px;
+    padding-top: 10px;
+    min-height: 40px;
+}
+
+ul.options li.AddLarge {
+    background: url(images/icons/icn_Add48.png) no-repeat 5px 5px;
+    padding-left: 66px;
+    padding-top: 10px;
+    min-height: 40px;
+}
+
+    ul.options li.AddLarge h2 {
+        margin-top: 8px;
+    }
+
+ul.options li .option-title {
+    position: relative;
+    font-weight: bold;
+    padding: 0px;
+}
+
+ul.options li .option-info p {
+    margin-top: 6px;
+    margin-bottom: 0px;
+    color: #474747;
+}

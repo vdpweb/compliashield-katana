@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "Centralized Account Data & Verification";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Leverage OAuth for Your Applications</div>
+    <div class="panel-body">
+        <p>
+            CompliaShield&trade; securely transfers account information via OAuth2 to any website.
+        </p>
+        <p>
+            Our OAuth provider is very similar to integrating with Google's service, but with the advantage of many robust corporate enterprise features.
+        </p>
+        <p>
+            We add in functionality for:
+            <ul>
+                <li>HIPAA protected account policies</li>
+                <li>Multiple organization access to data</li>
+                <li>Unified logging to responsible administrators</li>
+                <li>Secure data storage with logged and audited access</li>
+            </ul>
+        </p>
+    </div>
+    <div class="panel-footer clearfix">
+        <div class="pull-right">
+            <a class="btn btn-primary" href="https://www.compliashield.com/services/oauth" target="_blank">Lean more &raquo;</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="panel panel-success">
+
+    <div class="panel-heading">
+
+        <h3 class="panel-title"><strong>Authenticated as</strong> @User.Identity.GetUserEmail()</h3>
+
+    </div>
+
+    <div class="panel-body">
+
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Claim Type</th>
+                        <th>Value</th>
+                        @*<th>Subject</th>*@
+                        @*<th>OriginalIssuer</th>*@
+                        @*<th>Issuer</th>*@
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var claim in System.Security.Claims.ClaimsPrincipal.Current.Claims)
+            {
+                        <tr>
+                            <td>@claim.Type</td>
+                            <td>@claim.Value</td>
+                            @*<td>@claim.Subject</td>*@
+                            @*<td>@claim.OriginalIssuer</td>*@
+                            @*<td>@claim.Issuer</td>*@
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>
