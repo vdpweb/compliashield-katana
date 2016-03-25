@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CompliShield OWIN Katana Integration")]
-[assembly: AssemblyDescription("Enable a web app for CompliaShield users to login via OAuth2 using Microsoft.Owin")]
+[assembly: AssemblyTitle("CompliaShield OWIN Katana Integration")]
+[assembly: AssemblyDescription("Enable a web app for CompliaShield users to login via OAuth2 using Katana and Microsoft.Owin")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("JFM Concepts, LLC")]
-[assembly: AssemblyProduct("CompliaShield OWIN")]
+[assembly: AssemblyCompany("CompliaShield")]
+[assembly: AssemblyProduct("CompliaShield OWIN Katana Integration")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
-[assembly: AssemblyTrademark("CompliaShield is a registered trademark of JFM Concepts, LLC")]
+[assembly: AssemblyTrademark("CompliaShield is a registered trademark of CompliaShield LLC")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
