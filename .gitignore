@@ -8,6 +8,7 @@ Web.Debug.config
 Web.Release.config
 bin
 obj
+.vs/
 *.suo
 *.publishsettings
 TestResults
