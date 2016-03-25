@@ -1,0 +1,40 @@
+﻿@model CompliaShield.Katana.Sandbox.WebClient.Models.ExternalLoginListViewModel
+@using Microsoft.Owin.Security
+
+@*<h3>Use another service to log in.</h3>*@
+
+@{
+    var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
+    if (loginProviders.Count() == 0)
+    {
+        <div>
+            <p>
+                There are no external authentication services configured. See <a href="http://go.microsoft.com/fwlink/?LinkId=403804">this article</a>
+                for details on setting up this ASP.NET application to support logging in via external services.
+            </p>
+        </div>
+    }
+    else {
+        using (Html.BeginForm("ExternalLogin", "Account", new { ReturnUrl = Model == null ? Request.QueryString["ReturnUrl"] : Model.ReturnUrl }))
+        {
+            @Html.AntiForgeryToken()
+            <div id="socialLoginList">
+                @foreach (AuthenticationDescription p in loginProviders)
+                    {
+                        if (p.AuthenticationType == "CompliaShield")
+                        {
+                        <div class="clearfix text-center">
+                            <p>Verify your identity with our trusted partner, CompliaShield:</p>
+                            <button type="submit" class="btn btn-primary" id="@p.AuthenticationType" name="provider" value="@p.AuthenticationType" title="Log in using your @p.Caption account">Login via @p.Caption &raquo;</button>
+                        </div>
+                    }
+                    else
+                    {
+                        <button type="submit" class="btn btn-default" id="@p.AuthenticationType" name="provider" value="@p.AuthenticationType" title="Log in using your @p.Caption account">@p.AuthenticationType</button>
+                    }
+                }
+
+            </div>
+        }
+    }
+}
