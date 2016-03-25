@@ -1,4 +1,4 @@
-﻿// Copyright (c) Microsoft Open Technologies, Inc. All rights reserved. See License.txt in the project root for license information.
+﻿
 
 using System;
 using System.Collections.Generic;
@@ -22,6 +22,9 @@ namespace CompliaShield.Owin.Security.OAuth2Service
 
         private const string TokenEndpoint = "https://accounts.compliashield.com/oauth2/token";
         private const string AuthorizeEndpoint = "https://accounts.compliashield.com/oauth2/auth";
+
+        //private const string TokenEndpoint = "http://localhost:49267/oauth2/token";
+        //private const string AuthorizeEndpoint = "http://localhost:49267/oauth2/auth";
 
         private readonly ILogger _logger;
         private readonly HttpClient _httpClient;
@@ -90,7 +93,6 @@ namespace CompliaShield.Owin.Security.OAuth2Service
                 catch (Exception ex)
                 {
                     exception = ex;
-
                 }
                 if (exception != null)
                 {

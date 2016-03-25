@@ -78,7 +78,7 @@ namespace CompliaShield.Katana.Sandbox.WebClient.Controllers
                 return new RedirectResult(returnUrl);
             }
             
-            var direct = ConfigurationManager.AppSettings["vdpweboauth:direct"];
+            var direct = ConfigurationManager.AppSettings["csoauth:direct"];
             if(!string.IsNullOrEmpty(direct) && direct.ToLower() == "true")
             {
                 return new ChallengeResult(CompliaShield.Owin.Security.OAuth2Service.Constants.DefaultAuthenticationType, Url.Action("ExternalLoginCallback", "Account", new { ReturnUrl = returnUrl }));

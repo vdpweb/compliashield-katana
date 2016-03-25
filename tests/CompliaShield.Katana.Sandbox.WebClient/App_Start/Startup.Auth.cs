@@ -37,7 +37,7 @@ namespace CompliaShield.Katana.Sandbox.WebClient
             //Enable External Sign In Cookie
             app.SetDefaultSignInAsAuthenticationType("Application");
 
-            // Enable VDP Web OAuth2 sign in
+            // Enable CompliaShield OAuth2 sign in
             var cookieOptions = new CookieAuthenticationOptions
             {
                 AuthenticationType = CompliaShield.Owin.Security.OAuth2Service.Constants.DefaultAuthenticationType,
@@ -54,8 +54,8 @@ namespace CompliaShield.Katana.Sandbox.WebClient
 
             var options = new CompliaShieldOAuth2AuthenticationOptions()
             {
-                ClientId = ConfigurationManager.AppSettings["vdpweboauth:client_id"],
-                ClientSecret = ConfigurationManager.AppSettings["vdpweboauth:client_secret"],
+                ClientId = ConfigurationManager.AppSettings["csoauth:client_id"],
+                ClientSecret = ConfigurationManager.AppSettings["csoauth:client_secret"],
                 RolesDesignations = new string[] { "role", "urn:oauth:role" },
                 OnGetResellerKey = GetResellerKey
             };
@@ -68,27 +68,27 @@ namespace CompliaShield.Katana.Sandbox.WebClient
             //// make this match
             //AntiForgeryConfig.UniqueClaimTypeIdentifier =  // options.UniqueNameDesignation;
 
-            var scope = ConfigurationManager.AppSettings["vdpweboauth:scope"];
+            var scope = ConfigurationManager.AppSettings["csoauth:scope"];
             if (!string.IsNullOrEmpty(scope))
             {
                 scope.Split(' ').ToList().ForEach(x => options.Scope.Add(x));
             }
 
-            var approval_prompt = ConfigurationManager.AppSettings["vdpweboauth:approval_prompt"];
+            var approval_prompt = ConfigurationManager.AppSettings["csoauth:approval_prompt"];
             if (!string.IsNullOrEmpty(approval_prompt))
             {
                 options.ApprovalPrompt = approval_prompt;
             }
 
-            // configure app to use VDP Web OAuth2
+            // configure app to use CompliaShield OAuth2
             app.UseCompliaShieldAuthentication(options);
 
 
 
             //// alternative simple implementation
             //app.UseCompliaShieldAuthentication(
-            //    clientId: ConfigurationManager.AppSettings["vdpweboauth:client_id"],
-            //    clientSecret: ConfigurationManager.AppSettings["vdpweboauth:client_secret"]);
+            //    clientId: ConfigurationManager.AppSettings["csoauth:client_id"],
+            //    clientSecret: ConfigurationManager.AppSettings["csoauth:client_secret"]);
 
             //app.UseGoogleAuthentication(
             //     "483812179322-1smrcm7fjj59aoq1hejk55o2kv8o4ars.apps.googleusercontent.com",

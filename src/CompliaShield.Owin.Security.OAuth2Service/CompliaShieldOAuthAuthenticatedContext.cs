@@ -8,7 +8,7 @@ namespace CompliaShield.Owin.Security.OAuth2Service
     using System.Threading.Tasks;
     using Newtonsoft.Json;
 
-    class CompliaShieldOAuthAuthenticatedContext2
+    class CompliaShieldOAuthAuthenticatedContext
     {
 
         [JsonProperty("certserialnumber")]
@@ -23,8 +23,8 @@ namespace CompliaShield.Owin.Security.OAuth2Service
         [JsonProperty("displayName")]
         public string DisplayName { get; set; }
 
-        [JsonProperty("urn:vdpweb:role")]
-        public string[] UrnVdpwebRole { get; set; }
+        [JsonProperty("urn:internal:role")]
+        public string[] UrnInternalRole { get; set; }
 
         [JsonProperty("role")]
         public string[] Role { get; set; }

@@ -62,22 +62,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompliaShieldOAuthAuthenticatedContext2.cs" />
+    <Compile Include="CompliaShieldOAuthAuthenticatedContext.cs" />
     <Compile Include="Constants.cs" />
-    <Compile Include="CompliShieldAuthenticationExtensions.cs" />
-    <Compile Include="CompliShieldOAuth2AuthenticationHandler.cs" />
-    <Compile Include="CompliShieldOAuth2AuthenticationMiddleware.cs" />
+    <Compile Include="CompliaShieldAuthenticationExtensions.cs" />
+    <Compile Include="CompliaShieldOAuth2AuthenticationHandler.cs" />
+    <Compile Include="CompliaShieldOAuth2AuthenticationMiddleware.cs" />
     <Compile Include="CompliShieldOAuth2AuthenticationOptions.cs" />
     <Compile Include="Infrastructure\Message.cs" />
     <Compile Include="Infrastructure\Property.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Provider\CompliShieldAuthenticatedContext.cs" />
-    <Compile Include="Provider\CompliShieldOAuth2ApplyRedirectContext.cs" />
-    <Compile Include="Provider\CompliShieldOAuth2AuthenticatedContext.cs" />
-    <Compile Include="Provider\CompliShieldOAuth2AuthenticationProvider.cs" />
-    <Compile Include="Provider\CompliShieldOAuth2ReturnEndpointContext.cs" />
-    <Compile Include="Provider\CompliShieldReturnEndpointContext.cs" />
-    <Compile Include="Provider\ICompliShieldOAuth2AuthenticationProvider.cs" />
+    <Compile Include="Provider\CompliaShieldAuthenticatedContext.cs" />
+    <Compile Include="Provider\CompliaShieldOAuth2ApplyRedirectContext.cs" />
+    <Compile Include="Provider\CompliaShieldOAuth2AuthenticatedContext.cs" />
+    <Compile Include="Provider\CompliaShieldOAuth2AuthenticationProvider.cs" />
+    <Compile Include="Provider\CompliaShieldOAuth2ReturnEndpointContext.cs" />
+    <Compile Include="Provider\CompliaShieldReturnEndpointContext.cs" />
+    <Compile Include="Provider\ICompliaShieldOAuth2AuthenticationProvider.cs" />
     <Compile Include="Resources.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
