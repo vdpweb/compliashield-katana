@@ -149,6 +149,9 @@ namespace CompliaShield.Owin.Security.OAuth2Service
                     }
                 }
 
+                // add in the actual JWT to the identity
+                context.Identity.AddClaim(new Claim("jwt", accessToken, ClaimValueTypes.String, CompliaShield.Owin.Security.OAuth2Service.Constants.DefaultAuthenticationType, idClaim.Issuer));
+
                 foreach (var claim in context.Token.Claims)
                 {
                     bool handled = false;
