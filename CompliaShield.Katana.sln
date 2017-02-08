@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompliaShield.Owin.Security.OAuth2Service", "src\CompliaShield.Owin.Security.OAuth2Service\CompliaShield.Owin.Security.OAuth2Service.csproj", "{5791A106-93E2-4508-BDD4-3550BB947BE4}"
 EndProject
@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sandbox", "Sandbox", "{81D0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompliaShield.Katana.Sandbox.WebClient", "tests\CompliaShield.Katana.Sandbox.WebClient\CompliaShield.Katana.Sandbox.WebClient.csproj", "{789A8BDD-494A-4602-BF42-4DC1026AF085}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompliaShield.Sdk.Identity", "..\compliashield-sdk\CompliaShield.Sdk.Identity\CompliaShield.Sdk.Identity.csproj", "{1442F440-81D0-4604-8B2B-EEBBD50D3BC4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompliaShield.Sdk.Identity", "..\compliashield-sdk-base\CompliaShield.Sdk.Identity\CompliaShield.Sdk.Identity.csproj", "{1442F440-81D0-4604-8B2B-EEBBD50D3BC4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompliaShield-SDK", "CompliaShield-SDK", "{0DB8AAAC-D033-4A37-9B87-65E442796B7B}"
 EndProject
